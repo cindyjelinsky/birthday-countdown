@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.324), rgba(0, 0, 0, 0.77)),url("asset/bg-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    
+           
+}
+
+
+
+
+.container h1{
+    margin-bottom: 5rem;
+    font-size: 2.7rem;
+    font-style: italic;
+    padding: 20px;
+   margin-bottom: 20px;
+  
+   
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+     
+    
+}
+
+.counter .dots{
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+
+.display-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.display-number h2{
+    font-weight: 700;
+    font-size: 8rem;
+   
+}
+.display-number span{
+   position:absolute;
+   font-size: 1.2rem;
+   margin-top: 150px;
+}
+
+.date{
+    margin-top: 50px;
+    font-size: 3rem;
+    color: #ffffff55;
+}
+
+.date span{
+    color: rgba(12, 255, 20, 0.513);
+  
+}
+
+.date sup{
+    font-size: 2rem;
+  
+}
+
+
+@media(max-width: 500px){
+
+    .container{
+        background-repeat: repeat;
+    }
+    .container h1{
+        margin-bottom: 5rem;
+        font-size: 2.6rem;
+        font-style: italic;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        
+        padding-left: 0px;
+       
+       
+    }
+
+    .counter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+               
+    }
+
+
+    .counter .dots{
+        display: none;
+      }
+
+      .display-number span{
+        position:absolute;
+        font-size: 1.2rem;
+        margin-top: 100px;
+        font-weight: 700;
+     }
+    
+    
+
+    .display-number h2{
+        font-weight: 700;
+        font-size: 5rem;
+        margin-bottom: 20px;
+       
+    }
+
+    .date{
+        
+        font-size: 2.2rem;
+        
+    }
+
+    
+}
+
